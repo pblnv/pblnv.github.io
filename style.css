@@ -2,6 +2,11 @@
 body {
     background-color: azure
   }
+
+body {
+    font-family: "Palatino", serif;
+  }
+
 h1, h2 {
     color:#ff0090;
   }
@@ -22,10 +27,8 @@ a:active {
     color: #ff0090;
   }
 
-  #testbody {
-    border-left: 1px solid #ff0090;
- }
-
 body {
-    font-family: "Palatino", serif;
-}
+    border-top: 10px solid #ff0090;
+    border-bottom: 10px solid #ff0090;
+  }
+
