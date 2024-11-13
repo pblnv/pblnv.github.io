@@ -1,0 +1,31 @@
+
+body {
+    background-color: azure
+  }
+h1, h2 {
+    color:#ff0090;
+  }
+
+a:link {
+    color: #037265;
+  }
+
+a:visited {
+    color: #34364b;
+  }
+  
+a:hover {
+    color: #57c9a8;
+  }
+  
+a:active {
+    color: #ff0090;
+  }
+
+  #testbody {
+    border-left: 1px solid #ff0090;
+ }
+
+body {
+    font-family: "Palatino", serif;
+}
