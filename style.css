@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: "Palatino", serif;
+    font-family: "EB Garamond", serif;
     border-bottom: 10px solid #ff0090;
     background-color: azure;
   }
@@ -60,7 +60,7 @@ a:active {
     width: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0;
-    background-color: #ffffff;
+    background-color: azure;
     border-bottom: 10px solid #ff0090; 
     border-top: 10px solid #ff0090;
     display: table;
