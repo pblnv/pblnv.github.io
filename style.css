@@ -11,7 +11,7 @@ html {
 }
 
 #main {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 body {
@@ -20,21 +20,32 @@ body {
     background-color: azure;
   }
 
-p, h3, h4, h5, h6, ul {
+p, h4, h5, h6, ul {
     margin: 15px;
     color: black;
     list-style-type: none;
 }
 
-h1, h2 {
+h1 {
+  margin: 15px;
+  color: #c50070;
+}
+
+h2 {
     margin: 15px;
     color:#ff0090;
   }
 
+h3 {
+    margin: 15px;
+    color: #c50070;
+  }
+  
 
-img {
+
+.works img {
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -56,32 +67,119 @@ a:active {
     color: #ff0090;
   }
 
-  #menu {
+  #navbar {
     width: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0;
     background-color: azure;
     border-bottom: 10px solid #ff0090; 
     border-top: 10px solid #ff0090;
-    display: table;
+    display: inline-block;
     position: fixed;
     top: 0;
     width: 100%;
   }
 
-#menu li {
+#navbar li {
     margin-bottom: 10px;
     list-style-type: none;
+    float: right;
+  }
+
+  #navbar img {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
     float: left;
   }
 
-#menu li a {
-    display: block;
+#navbar li a {
+    display: grid;
     padding-inline: 10px;
     font-weight: bold;
     color: darkcyan;
   }
 
-#menu li a:hover {
+#navbar li a:hover {
     color: #ff0090;
   }
+
+.logo img{
+   display: grid;
+}
+
+
+
+
+#main {
+  background-color: #fdebff;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#about {
+  background-color: #fdff82;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+
+#education {
+  background-color: azure;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 50vh;
+}
+
+#hobby {
+  background-color: azure;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: 50vh;
+}
+
+#works {
+  background-color: #f6eaff;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#contacts {
+  background-color: azure;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 50vh;
+}
