@@ -16,19 +16,19 @@ html {
 
 body {
     font-family: "EB Garamond", serif;
-    border-bottom: 10px solid #ff0090;
     background-color: azure;
+    border-bottom: 10px solid #ff0090;
   }
 
 p, h4, h5, h6, ul {
     margin: 15px;
-    color: black;
+    color: #002d5e;
     list-style-type: none;
 }
 
 h1 {
   margin: 15px;
-  color: #c50070;
+  color: #d1007a;
 }
 
 h2 {
@@ -51,16 +51,16 @@ h3 {
   }
 
 a:link {
-    color: darkcyan;
+    color: #056bda;
     text-decoration: none;
   }
 
 a:visited {
-    color: #34364b;
+    color: #274d76;
   }
   
 a:hover {
-    color: #57c9a8;
+    color: #689ed9;
   }
   
 a:active {
@@ -97,7 +97,7 @@ a:active {
     display: grid;
     padding-inline: 10px;
     font-weight: bold;
-    color: darkcyan;
+    color: #003e81;
   }
 
 #navbar li a:hover {
@@ -124,7 +124,7 @@ a:active {
 }
 
 #about {
-  background-color: #fdff82;
+  background-color: #f0fcff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ a:active {
 
 
 #education {
-  background-color: azure;
+  background-color: #f6eaff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@ a:active {
 }
 
 #hobby {
-  background-color: azure;
+  background-color: #f6eaff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ a:active {
 }
 
 #works {
-  background-color: #f6eaff;
+  background-color: #f0fcff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -173,7 +173,7 @@ a:active {
 }
 
 #contacts {
-  background-color: azure;
+  background-color: #f6eaff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
