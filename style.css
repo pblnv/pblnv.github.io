@@ -157,6 +157,7 @@ a:active {
 #about .other-content img {
   max-width: 100%;
   height: 400px;
+  max-height: 500px;
   width: auto;
   display: block;
   margin: 0 auto; 
