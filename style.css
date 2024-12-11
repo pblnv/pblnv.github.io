@@ -78,19 +78,25 @@ a:active {
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
 #navbar li {
-    margin-bottom: 10px;
+
     list-style-type: none;
-    float: right;
-  }
+   }
 
   #navbar img {
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 5px;
-    float: left;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
   }
 
 #navbar li a {
