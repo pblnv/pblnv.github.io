@@ -12,6 +12,7 @@ html {
 
 #main {
   margin-top: 70px;
+  font-size: 1.5rem;
 }
 
 body {
@@ -26,20 +27,10 @@ p, h4, h5, h6, ul {
     list-style-type: none;
 }
 
-h1 {
+h1, h2, h3 {
   margin: 15px;
   color: #ff0090;
 }
-
-h2 {
-    margin: 15px;
-    color:#ff0090;
-  }
-
-h3 {
-    margin: 15px;
-    color: #c50070;
-  }
 
 a:link {
     color: #056bda;
@@ -75,7 +66,6 @@ a:active {
   }
 
 #navbar li {
-
     list-style-type: none;
    }
 
@@ -110,16 +100,42 @@ a:active {
 }
 
 #main {
-  background-color: #fdebff;
+  background-color: #f0fcff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
+
+#main .left-content {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#main .right-content {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+}
+
+#main .right-content img {
+  height: 400px;
+  max-height: 500px;
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
 
 #about {
   background-color: #f0fcff;
@@ -128,47 +144,49 @@ a:active {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
 }
 
-#about .left-content {
+#about .right-content {
   flex: 1;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+}
+
+#about .left-content {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+}
+
+#about .left-content img {
+  height: 400px;
+  max-height: 500px;
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto; 
 }
 
 #about h2 {
   font-size: 2rem;
   font-weight: bold;
-}
-
-#about .other-content {
-  flex: 1;
-  width: 50%;
-  padding: 20px;
-  justify-content: center;
-}
-
-#about .other-content img {
-  max-width: 100%;
-  height: 400px;
-  max-height: 500px;
-  width: auto;
-  display: block;
-  margin: 0 auto; 
+  margin-bottom: 20px;
 }
 
 #education-hobby-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
-  min-height: 50vh;
+  align-items: flex-start;
+  min-height: 70vh;
+  background-color: #f6eaff;
 }
 
 #education {
@@ -181,7 +199,8 @@ a:active {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 20px;
+  padding: 80px 20px;
+  align-items: flex-start;
 }
 
 #hobby {
@@ -193,8 +212,9 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
+  align-self: flex-end;
+  padding: 80px 20px;
+  min-height: 40vh;
 }
 
 #works {
@@ -203,28 +223,39 @@ a:active {
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+#works .left-content,
+#works .right-content {
+  flex: 1;
+  width: 50%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
-  margin-bottom: 15px;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 #works img {
-  margin-top: 5px;
-  margin-bottom: 5px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  max-width: 90%;
 }
 
 #works h2 {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 40px;
+  color: #ff0090;
 }
 
-#contact-section {
+#contacts {
   background-color: #f6eaff;
   background-position: center;
   background-size: contain;
@@ -233,15 +264,12 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
-}
-
-.contact-section {
+  min-height: 40vh;
   text-align: center;
-  padding: 50px 0;
+  padding: 80px 20px;
 }
 
-.contact-section h2 {
+.contacts h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -278,6 +306,6 @@ a:active {
 
 #footer p {
   margin: 0;
-  color: #003e81;
+  color: #002d5e;
   text-align: center;
 }
