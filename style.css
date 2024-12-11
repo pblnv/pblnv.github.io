@@ -18,7 +18,6 @@ body {
     color: #f6eaff;
     font-family: "EB Garamond", serif;
     background-color: azure;
-    border-bottom: 10px solid #ff0090;
   }
 
 p, h4, h5, h6, ul {
@@ -29,7 +28,7 @@ p, h4, h5, h6, ul {
 
 h1 {
   margin: 15px;
-  color: #d1007a;
+  color: #ff0090;
 }
 
 h2 {
@@ -40,15 +39,6 @@ h2 {
 h3 {
     margin: 15px;
     color: #c50070;
-  }
-  
-
-
-.works img {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
 a:link {
@@ -115,8 +105,9 @@ a:active {
    display: grid;
 }
 
-
-
+.logo:hover {
+  transform: scale(1.5);
+}
 
 #main {
   background-color: #fdebff;
@@ -136,23 +127,60 @@ a:active {
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
+#about .left-content {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#about .other-content {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+
+#about .other-content img {
+  max-width: 100%;
+  height: 400px;
+  width: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+#education-hobby-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 50vh;
+}
 
 #education {
   background-color: #f6eaff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  min-height: 50vh;
+  padding: 20px;
 }
 
 #hobby {
@@ -160,11 +188,12 @@ a:active {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  min-height: 50vh;
+  padding: 20px;
 }
 
 #works {
@@ -177,9 +206,21 @@ a:active {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+#works img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#works h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #contact-section {
@@ -193,7 +234,6 @@ a:active {
   align-items: center;
   min-height: 50vh;
 }
-
 
 .contact-section {
   text-align: center;
@@ -219,4 +259,24 @@ a:active {
 
 .contact-icon:hover {
   transform: scale(1.1);
+}
+
+#footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  border-top: 10px solid #ff0090;
+  border-bottom: 10px solid #ff0090;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
+#footer p {
+  margin: 0;
+  color: #003e81;
+  text-align: center;
 }
